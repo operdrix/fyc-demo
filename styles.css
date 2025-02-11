@@ -1,0 +1,240 @@
+/* Corps global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Contraste renforcé */
+  font-size: 100%; /* Taille relative */
+  line-height: 1.6; /* Lisibilité améliorée */
+}
+
+/* En-tête */
+header {
+  background-image: url('https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* Sections principales */
+main {
+  margin: 20px;
+}
+
+.events,
+.search,
+.form {
+  margin: 20px;
+}
+
+.category {
+  margin-bottom: 20px;
+}
+
+.event {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #333; /* Contraste renforcé */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Boutons */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: 3px solid #ffcc00;
+  outline-offset: 2px;
+}
+
+/* Images générales */
+img {
+  max-width: 100%; /* S'adapte à la largeur de son conteneur */
+  height: auto; /* Conserve les proportions */
+  display: block;
+  margin: 10px 0;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  object-fit: cover; /* Adapte l'image pour remplir le conteneur en recadrant si nécessaire */
+}
+
+.container-theater {
+  max-width: 10rem;
+  max-height: 18rem;
+  overflow: hidden; /* Coupe les parties des images qui débordent */
+  position: relative; /* Nécessaire pour gérer correctement l'image à l'intérieur */
+}
+
+.container-concert {
+  max-width: 22rem;
+  max-height: 18rem;
+  overflow: hidden; /* Coupe les parties des images qui débordent */
+  position: relative; /* Nécessaire pour gérer correctement l'image à l'intérieur */
+}
+
+/* Vidéos */
+.video {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+/* Pied de page */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.875rem;
+}
+
+/* Menu de navigation accessible */
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ccc;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 7px;
+}
+
+.menu li {
+  position: relative;
+  margin: 0;
+}
+
+/* Lien et bouton */
+.menu a,
+.menu button {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; /* On peut ajuster si besoin */
+}
+
+.menu a:hover,
+.menu button:hover {
+  color: #007bff;
+}
+
+.menu a:focus,
+.menu button:focus {
+  outline: 3px solid #ffcc00;
+  outline-offset: 2px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ccc;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  min-width: 150px; /* largeur minimale pour le sous-menu */
+}
+
+/* Items du sous-menu */
+.submenu li {
+  margin: 0;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px 15px;
+}
+
+/* Affichage conditionnel du sous-menu si aria-expanded="true" */
+[aria-expanded='true'] + .submenu {
+  display: block;
+}
+
+/* Formulaire */
+form {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Champs de formulaire */
+form div {
+  margin-bottom: 15px;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Radios */
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio label {
+  margin: 0;
+  font-weight: normal;
+}
